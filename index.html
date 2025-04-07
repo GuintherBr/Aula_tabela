@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+       th, td{
+        border: 1px solid black;
+       } 
+       tfoot{
+        background-color: cyan;
+       }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <Table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+                <th>Red Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>5$</td>
+                <td>sim</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+                <td>sim</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>3</td>
+                <td>15$</td>
+                <td>não</td>
+                <td rowspan="2">não</td>
+            </tr>
+            <tr>
+                <td>Produto 4</td>
+                <td>6</td>
+                <td>20$</td>
+                <td>não</td>
+                
+            </tr>
+            <tr>
+                <td>Produto 5</td>
+                <td>7</td>
+                <td>12$</td>
+                <td colspan="2">Sim</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>media/produto</td>
+                <td colspan="4">2,69$</td>
+            </tr>
+        </tfoot>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>23</td>
+                <td colspan="3">62$</td>
+            </tr>
+        </tfoot>
+
+        
+
+    </Table>
+</body>
+</html>
